@@ -16,8 +16,6 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use('/api/user', require("./Routers/UserRouter"))
 
-app.use('/api/demo', require("./Routers/DemoRouter"))
-
 app.listen(PORT, () => {
   console.log(`Demo Server is running  at PORT ${PORT}`);
 }); 
