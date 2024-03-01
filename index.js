@@ -16,9 +16,10 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use('/api/user', require("./Routers/UserRouter"))
 
-app.get('/', async(req, res)=>{
-  res.send("Server is running 👍👍")
-})
+app.get('/', async (req, res) => {
+  res.send('<h1 class="red">Server <span class="blue">is</span> <span class="green">running</span> 👍👍</h1>');
+});
+
 
 app.listen(PORT, () => {
   console.log(`Server is running at PORT ${PORT} 👍👍`);
