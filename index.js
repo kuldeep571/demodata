@@ -16,6 +16,8 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use('/api/user', require("./Routers/UserRouter"))
 
+app.use('/api/demo', require("./Routers/DemoRouter"))
+
 app.get('/', async (req, res) => {
   res.send('<h1 class="red">Server <span class="blue">is</span> <span class="green">running</span> 👍👍</h1>');
 });
